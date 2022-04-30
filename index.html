@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Ubuntu&display=swap"
+    rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body class="font-weight-bold">
+  <div class="fluid-container">
+    <!--Top background image-->
+    <img class="bg-top-img" src="images/bg-top.svg" alt="bg_top_img">
+
+    <!--Header section-->
+    <header class="d-flex flex-column pt-5 px-4">
+      <h2 class="text-center pb-5">Our Pricing</h2>
+      <div class="d-flex justify-content-center">
+        <h6 class="px-4 my-auto">Annual</h6>
+        <label class="toggle mt-2" for="myToggle">
+          <input class="toggle__input" type="checkbox" id="myToggle" onclick="togglePrices();">
+          <div class="toggle__fill"></div>
+        </label>
+        <h6 class="px-4 my-auto">Monthly</h6>
+      </div>
+    </header>
+
+    <main class="container pt-5">
+      <div class="row no-gutters">
+        <!--left card-->
+        <div class="col-sm-12 col-md-4 mb-4">
+          <div class="pt-4">
+            <div class="card text-center">
+              <h5 class="card-title mt-4">Basic</h5>
+              <div class="card-body">
+                <h2 id="basicPrice" class="card-title border-bottom display-4">&dollar; 19.99</h2>
+                <p class="border-bottom py-2">500 GB Storage</p>
+                <p class="border-bottom py-2">2 Users Allowed</p>
+                <p class="border-bottom py-2 mb-5">Send up to 3 GB</p>
+                <button type="button" name="corner" class="btn btn-lg btn-block  my-4  color-gradient"> LEARN MORE
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--middle card-->
+        <div class="col-sm-12 col-md-4">
+          <div class="card text-center pb-4 color-gradient text-white">
+            <h5 class="card-title pt-4 mt-4">Professional</h5>
+            <div class="card-body">
+              <h2 id="professionalPrice" class="card-title border-bottom display-4"> &dollar; 24.99</h2>
+              <p class="border-bottom py-2">1 TB Storage</p>
+              <p class="border-bottom py-2">5 Users Allowed</p>
+              <p class="border-bottom py-2 mb-5">Send up to 10 GB</p>
+              <button type="button" name="middle" class="btn btn-lg btn-block  my-4 text-purple "> LEARN MORE </button>
+            </div>
+          </div>
+        </div>
+
+
+        <!--right card-->
+        <div class="col-sm-12 col-md-4 mb-4">
+          <div class="pt-4">
+            <div class="card text-center">
+              <h5 class="card-title mt-4">Master</h5>
+              <div class="card-body">
+                <h2  id="masterPrice" class="card-title border-bottom display-4">&dollar; 39.99</h2>
+                <p class="border-bottom py-2">2 TB Storage</p>
+                <p class="border-bottom py-2">10 Users Allowed</p>
+                <p class="border-bottom py-2 mb-5">Send up to 20 GB</p>
+                <button type="button" name="corner" class="btn btn-lg btn-block  my-4  color-gradient"> LEARN MORE
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4">
+
+        </div>
+        <div class="col-sm-12 col-md-4">
+
+        </div>
+      </div>
+
+    </main>
+
+    <!--Bottom background image-->
+    <img class="bg-bottom-img" src="images/bg-bottom.svg" alt="bg_bottom_img">
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Aditya Kumbhar</a>.
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+
+  <!--custom js-->
+  <script src="index.js"></script>
+</body>
+
+</html>
